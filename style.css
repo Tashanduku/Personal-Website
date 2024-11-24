@@ -40,3 +40,21 @@
     opacity: 0.9;
     text-decoration: underline;
 }
+
+/* home section */
+#home {
+    background-color: #4B61DD; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hello {
+    font-size: 120px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
