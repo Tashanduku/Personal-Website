@@ -166,3 +166,33 @@
     border-radius: 50%; 
     object-fit: cover; 
   }
+/*projects*/
+  #projects {
+	overflow-x: hidden;
+	padding: 20px;
+	text-align: center;
+  }
+
+  .projtitle {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	animation: fadeInRight 1s ease-in; 
+  }
+
+  .project-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+	justify-items: center;
+  }
+
+  .project-item {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	overflow: hidden;
+	text-align: center;
+  }
+
+  .project-item:hover {
+	transform: scale(1.05);
+  }
