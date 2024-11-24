@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+  }
 #header {
     display: flex;  
     justify-content: space-between;
@@ -138,6 +141,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    width: 100%;
    
   }
   
@@ -171,28 +175,110 @@
 	overflow-x: hidden;
 	padding: 20px;
 	text-align: center;
+    width: 100%;
   }
 
   .projtitle {
 	font-size: 2rem;
-	margin-bottom: 20px;
-	animation: fadeInRight 1s ease-in; 
+	margin-bottom: 20px; 
   }
 
   .project-list {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	gap: 20px;
-	justify-items: center;
+	gap: 40px;
+	padding: 20px; 
+    align-items: start;
   }
 
   .project-item {
-	border: 1px solid #ccc;
-	border-radius: 8px;
-	overflow: hidden;
-	text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fdfdfd; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+
+  .project-item img {
+    width: 100%; /* Ensures images fit within their container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Avoids unwanted spacing around images */
   }
 
   .project-item:hover {
-	transform: scale(1.05);
+    transform: scale(1.05); /* Gentle scale on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
   }
+
+ /*social*/
+
+ #cont {
+    width: 100%;
+    padding: 2rem;
+    background-color: #222020;
+}
+
+.contact-header {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+    font-family: serif;
+    
+}
+.social {
+    padding: 0 2rem 2rem 2rem;
+    background-color: #222020;
+    width: 100%;
+    margin: 0%;
+}
+
+.social h3 {
+    margin-top: 0%;
+    color: white;
+    font-size: 1.5rem;
+    font-family: serif;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.subcontain {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.subcontain a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: serif;
+    font-style: italic;
+    transition: opacity 0.3s ease;
+}
+
+.subcontain a:hover {
+    opacity: 0.8;
+}
+
+/* Icon styling */
+.subcontain i {
+    font-size: 1.5rem;
+}
+
+.fa-github {
+    color: #809CFF;
+}
+
+.fa-tiktok {
+    color: #FF80EA;
+}
+
+.fa-envelope {
+    color: #80FF9E;
+}
